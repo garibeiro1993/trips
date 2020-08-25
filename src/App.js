@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from './routes';
+import Header from './components/Header';
 
 const App = () => {
   return (
-    <div>
-      Hellow Word
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes/>
+    </BrowserRouter>
   )
 }
 
